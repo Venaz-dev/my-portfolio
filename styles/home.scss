@@ -1,0 +1,51 @@
+.homepage{
+    position: relative;
+    padding: 30px 50px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span{
+        font-family: $italic-family;
+        font-size: 20px;
+        position: absolute;
+    }
+    .text{
+        position: relative;
+        padding: 70px 30px;
+       
+
+        h1{
+            font-size: 55px;
+            color: #ffffff;
+            margin: 20px 0;
+        }
+        p{
+            font-size: 14px;
+            text-transform: capitalize;
+            color: #8d8d8d;
+            letter-spacing: 3px;
+        }
+    }
+    .contact{
+        margin-top: 20px;
+        padding-left: 30px;
+        button{
+            letter-spacing: 3px;
+            color: $primary;
+            height: 50px;
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+            &:hover{
+                color: #ffffff;
+            }
+        }
+    }
+    .circle {
+        display: flex;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        width: 50%;
+    }
+}

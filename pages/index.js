@@ -1,65 +1,35 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import React from "react";
+import Layout from "../components/Layout";
+import Circle from "../components/canvas/circle";
 
-export default function Home() {
+const Index = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <Layout page="home">
+      <div className="homepage">
+        <span style={{ top: "20px", left: "10px" }}>{"<body>"}</span>
+        <div>
+          <div className="text">
+            <span style={{ top: "0", left: "10px" }}>{"<div>"}</span>
+            <h1>
+              Hi, I'm Chibuzo,
+              <br />
+              web developer.
+            </h1>
+            <p>front end web developer</p>
+            <span style={{ bottom: "0", left: "10px" }}>{"</div>"}</span>
+          </div>
+          <div className="contact">
+            <button className="link">Contact me!</button>
+          </div>
         </div>
-      </main>
+        <div className="circle">
+          <Circle />
+        </div>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
-}
+        <span style={{ bottom: "20px", left: "10px" }}>{"</body>"}</span>
+      </div>
+    </Layout>
+  );
+};
+
+export default Index;
