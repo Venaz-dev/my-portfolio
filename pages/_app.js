@@ -14,12 +14,14 @@ function MyApp({ Component, pageProps, router }) {
           pageInitial: {
             // opacity: 0,
             transform: 'scale(0.5)',
+            backgroundColor: 'white',
             
             
           },
           pageAnimate: {
             opacity: 1,
-            transform: 'scale(1)'
+            transform: 'scale(1)',
+            backgroundColor: '#1d1d1d',
           },
           pageExit:{
             backgroundColor: 'white',
