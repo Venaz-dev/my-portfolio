@@ -44,14 +44,14 @@ const Nav = ({ page, loading }) => {
           <p>WORKS</p>
         </div>
         <Link href="/contact">
-          <a>
+          
             <div>
               <div className="icon">
                 <Contact page={page} />
               </div>
               <p>CONTACT</p>
             </div>
-          </a>
+          
         </Link>
       </div>
       <div className="socials"></div>

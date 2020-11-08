@@ -9,25 +9,24 @@ function MyApp({ Component, pageProps, router }) {
         initial="pageInitial"
         animate="pageAnimate"
         exit="pageExit"
-        transition={{ duration: 1, type: "spring", stiffness: 100}}
+        transition={{ duration: 1,}}
         variants={{
           pageInitial: {
             // opacity: 0,
-            transform: 'scale(0.5)',
-            backgroundColor: 'white',
+            // transform: 'translateX(-100vw)',
             
             
           },
           pageAnimate: {
-            opacity: 1,
-            transform: 'scale(1)',
+           
+            transform: ' translateX(0)',
             backgroundColor: '#1d1d1d',
           },
           pageExit:{
-            backgroundColor: 'white',
+            backgroundColor: '#444444',
             // filter: 'invert()',
             // opacity: 0,
-            transform: 'scale(0.5)'
+            transform: ' translateY(100vh)'
           }
         }}
       >
