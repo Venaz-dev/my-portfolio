@@ -9,9 +9,11 @@ function MyApp({ Component, pageProps, router }) {
         initial="pageInitial"
         animate="pageAnimate"
         exit="pageExit"
-        transition={{ duration: 1,}}
+        transition={{ duration: 0.5,}}
         variants={{
           pageInitial: {
+            backgroundColor: '#444444',
+            transform: ' translateY(-100vh)'
             // opacity: 0,
             // transform: 'translateX(-100vw)',
             
@@ -19,7 +21,7 @@ function MyApp({ Component, pageProps, router }) {
           },
           pageAnimate: {
            
-            transform: ' translateX(0)',
+            transform: ' translateY(0vh)',
             backgroundColor: '#1d1d1d',
           },
           pageExit:{
