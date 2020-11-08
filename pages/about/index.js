@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import Circle from "../../components/canvas/circle"
+import Link from "next/link";
 
 const Index = () => {
   return (
@@ -20,7 +21,7 @@ const Index = () => {
             of gaming, outdoor activities and, recently, content creation.
           </p>
           <p className="bio">
-            Interested in the entire frontend spectrum and working on ambitious
+            Interested in the entire frontend spectrum, improving my <Link href="/skills"><a>skills</a></Link> and working on ambitious
             projects with positive people.
           </p>
         </div>

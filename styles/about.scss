@@ -38,6 +38,14 @@
             font-weight: 300;
             // letter-spacing: 1px;
         }
+        .contact-details{
+            color: #ffffff;
+            b{
+                color: $primary;
+                margin-right: 10px;
+                font-size: 18px;
+            }
+        }
     }
 
     .circle {

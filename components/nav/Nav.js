@@ -8,13 +8,13 @@ import Skills from "../../public/assets/skills";
 
 import Link from "next/link";
 
-const Nav = ({ page }) => {
+const Nav = ({ page, loading }) => {
   return (
     <nav>
       <div className="logo"></div>
       <div className="navigation">
         <Link href="/">
-          <div>
+          <div onClick={loading}>
             <div className="icon">
               <Home page={page} />
             </div>
@@ -22,20 +22,20 @@ const Nav = ({ page }) => {
           </div>
         </Link>
         <Link href="/about">
-        <div>
-          <div className="icon">
-            <About page={page} />
+          <div onClick={loading}>
+            <div className="icon">
+              <About page={page} />
+            </div>
+            <p>ABOUT</p>
           </div>
-          <p>ABOUT</p>
-        </div>
         </Link>
         <Link href="/skills">
-        <div>
-          <div className="icon">
-            <Skills page={page} />
+          <div onClick={loading}>
+            <div className="icon">
+              <Skills page={page} />
+            </div>
+            <p>SKILLS</p>
           </div>
-          <p>SKILLS</p>
-        </div>
         </Link>
         <div>
           <div className="icon">
@@ -43,12 +43,16 @@ const Nav = ({ page }) => {
           </div>
           <p>WORKS</p>
         </div>
-        <div>
-          <div className="icon">
-            <Contact page={page} />
-          </div>
-          <p>CONTACT</p>
-        </div>
+        <Link href="/contact">
+          <a>
+            <div>
+              <div className="icon">
+                <Contact page={page} />
+              </div>
+              <p>CONTACT</p>
+            </div>
+          </a>
+        </Link>
       </div>
       <div className="socials"></div>
     </nav>

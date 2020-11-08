@@ -8,6 +8,7 @@ body {
   margin: 0;
   color: #444444;
   background-color: $bg-color;
+  overflow: hidden !important;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -21,8 +22,12 @@ button{
 }
 
 a {
-  color: inherit;
+  color: lighten($color: $primary, $amount: 5);
   text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+    // text-transform: uppercase;
+  }
 }
 
 p{
@@ -56,4 +61,5 @@ p{
 @import "./home.scss";
 @import "./about.scss";
 @import "./skills.scss";
-@import "./canvas/circle.scss"
+@import "./canvas/circle.scss";
+@import "./loader.scss";

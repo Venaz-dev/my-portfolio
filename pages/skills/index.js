@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import Language from "../../components/canvas/language"
+import Language from "../../components/canvas/language";
+import Link from "next/link";
 
 const Index = () => {
   return (
@@ -16,16 +17,22 @@ const Index = () => {
             of the web).
           </p>
           <p className="bio">
-            HTML, CSS, JS, building small and medium web apps with
-            Next(React) js, Vue js, animations, and coding
-            interactive layouts.
+            HTML, CSS, JS, building small and medium web apps with Next(React)
+            js, Vue js, animations, and coding interactive layouts.
           </p>
           <p className="bio">
             I also have experience building with open source CMS like Wordpress
           </p>
+          <p className="bio">
+            Visit my <a href="linkedin.com">linkedIn</a> profile or just{" "}
+            <Link href="/contact">
+              <a>contact</a>
+            </Link>{" "}
+            me.
+          </p>
         </div>
         <div className="circle">
-            <Language />
+          <Language />
         </div>
 
         <span style={{ bottom: "0", left: "10px" }}>{"</body>"}</span>
