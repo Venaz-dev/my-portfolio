@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps, router }) {
         initial="pageInitial"
         animate="pageAnimate"
         exit="pageExit"
-        transition={{ duration: 1, type: "spring", stiffness: 150}}
+        transition={{ duration: 1, type: "spring", stiffness: 100}}
         variants={{
           pageInitial: {
             // opacity: 0,
@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps, router }) {
             transform: 'scale(1)'
           },
           pageExit:{
-            // backgroundColor: 'white',
+            backgroundColor: 'white',
             // filter: 'invert()',
             // opacity: 0,
             transform: 'scale(0.5)'
