@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import Language from "../../components/canvas/language";
 import Link from "next/link";
+import TextAnimation from "../../components/animation/text_animation";
 
 const Index = () => {
   return (
@@ -10,7 +11,10 @@ const Index = () => {
         <span style={{ top: "0", left: "10px" }}>{"<body>"}</span>
         <div className="text">
           <p className="tag">{"<h1>"}</p>
-          <h1>Skills & Experience</h1>
+          <TextAnimation text="Skills" />
+          <TextAnimation text=" & " />
+          <TextAnimation text="Experience" />
+          {/* <h1>Skills & Experience</h1> */}
           <p className="tag">{"</h1>"}</p>
           <p className="bio">
             The main area of my expertise is front end development (client side

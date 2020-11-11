@@ -1,5 +1,10 @@
 .circle-canvas{
-    width: 90vmin;
-    height: 100%;
+    width: 579px;
+    height: 587px;
     font-size: 50px;
+    @media(max-width: 500px){
+        width: 199px;
+        height: 207px;
+        transform: translateY(50px);
+    }
 }

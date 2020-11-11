@@ -9,6 +9,7 @@
         font-family: $italic-family;
         font-size: 20px;
         position: absolute;
+        opacity: 0.6;
     }
     .text{
         position: relative;
@@ -16,7 +17,7 @@
        
 
         h1{
-            font-size: 55px;
+            font-size: 60px;
             color: #ffffff;
             margin: 20px 0;
         }
@@ -41,11 +42,36 @@
         }
     }
     .circle {
+        position: absolute;
+        right: 0;
+
         display: flex;
         margin: 0;
         align-items: center;
         justify-content: center;
-        height: 400px;
+        height: 100vh;
         width: 50%;
+    }
+
+    @media(max-width: 500px){
+        padding: 50px 10px;
+        flex-direction: column-reverse;
+        .circle{
+            // display: none;
+            height: 25vh;
+            width: 100%;
+            position: relative;
+        }
+        .contact{
+            transform: translateY(-50px);
+            padding-left: 10px
+        }
+        .text{
+            transform: translateY(-50px);
+            padding: 70px 10px;
+            h1{
+                font-size: 45px;
+            }
+        }
     }
 }

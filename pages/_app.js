@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps, router }) {
           pageAnimate: {
            
             transform: ' translateY(0vh)',
-            backgroundColor: '#1d1d1d',
+            backgroundColor: '#101010',
           },
           pageExit:{
             backgroundColor: '#444444',

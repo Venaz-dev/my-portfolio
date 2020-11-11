@@ -33,7 +33,7 @@ const Circle = () => {
     /* ====================== */
     /* Some of those constants may change if the user resizes their screen but I still strongly believe they belong to the Constants part of the variables */
     const DOTS_AMOUNT = 1000; // Amount of dots on the screen
-    const DOT_RADIUS = 4; // Radius of the dots
+    const DOT_RADIUS = 1; // Radius of the dots
     let GLOBE_RADIUS = width * 0.7; // Radius of the globe
     let GLOBE_CENTER_Z = -GLOBE_RADIUS; // Z value of the globe center
     let PROJECTION_CENTER_X = width / 2; // X center of the canvas HTML
@@ -66,6 +66,7 @@ const Circle = () => {
         ctx.arc(this.xProject, this.yProject, DOT_RADIUS * this.sizeProjection, 0, Math.PI * 2);
         ctx.closePath();
         ctx.fill();
+        ctx.fillStyle = "#8957FF";
       }
     }
     

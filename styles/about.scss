@@ -40,10 +40,12 @@
         }
         .contact-details{
             color: #ffffff;
+            margin-bottom: 10px;
             b{
                 color: $primary;
                 margin-right: 10px;
                 font-size: 18px;
+                font-weight: 500;
             }
         }
     }
@@ -55,5 +57,23 @@
         justify-content: center;
         height: 400px;
         width: 50%;
+    }
+    .maps{
+        height: 100vh;
+        width: 50%;
+        transform: translateX(50px);
+    }
+
+    @media(max-width: 500px){
+        padding-left: 10px;
+        .text{
+            width: 100%;
+        }
+        .circle{
+            display: none;
+        }
+        .maps{
+            display: none;
+        }
     }
 }

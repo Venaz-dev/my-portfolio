@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore');
 $italic-family: 'La Belle Aurore';
 $primary: #8957FF;
-$bg-color: #1d1d1d;
+$bg-color: #101010;
 html,
 body {
   padding: 0;
@@ -51,8 +51,21 @@ p{
   }
 }
 
+.children{
+  padding-left: 70px;
+  @media(max-width: 500px){
+    padding: 0;
+  }
+}
+
 * {
   box-sizing: border-box;
+}
+
+@media(max-width: 500px){
+  h1{
+    font-size: 45px !important; 
+  }
 }
 
 
@@ -63,3 +76,4 @@ p{
 @import "./skills.scss";
 @import "./canvas/circle.scss";
 @import "./loader.scss";
+@import "./animation/animation.scss";

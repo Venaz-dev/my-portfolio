@@ -1,0 +1,33 @@
+.letter{
+    margin: 0 1px !important;
+    width: fit-content;
+    // animation: rubber linear 1s; 
+    cursor: pointer;
+    // &:hover{
+    //     animation: rubber linear 1s; 
+    // }
+}
+.letter-holder{
+    display: flex;
+    height: fit-content;
+}
+
+@keyframes rubber { 
+    0% {
+        color: $primary; 
+        transform: scale(1, 1); 
+    } 
+    25% { 
+        color: $primary; 
+        transform: scale(1.5, 0.6); 
+    } 
+
+    50% {
+        color: $primary;  
+        transform: scale(1.1, 0.9); 
+    } 
+    100% { 
+        color: #ffffff;
+        transform: scale(1, 1); 
+    } 
+} 

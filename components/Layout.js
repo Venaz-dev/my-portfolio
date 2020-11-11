@@ -15,7 +15,7 @@ const Layout = ({page, children}) => {
   return (
     <div>
       <Nav page={page} loading = {toogleLoading} />
-      <div style={{paddingLeft: '70px'}}>
+      <div className="children">
         {children}
       </div>
      

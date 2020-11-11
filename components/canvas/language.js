@@ -6,7 +6,7 @@ const Language = () => {
    const languages = ["CSS", "HTML"]
 
    const render = () => {
-    console.clear();
+    
 
     // Get the canvas element from the DOM
     const canvas = canvasRef.current;

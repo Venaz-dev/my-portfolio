@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import Circle from "../../components/canvas/circle"
 import Link from "next/link";
+import TextAnimation from "../../components/animation/text_animation";
 
 const Index = () => {
   return (
@@ -10,7 +11,8 @@ const Index = () => {
         <span style={{ top: "0", left: "10px" }}>{"<body>"}</span>
         <div className="text">
           <p className="tag">{"<h1>"}</p>
-          <h1>About me</h1>
+          <TextAnimation text="About me" />
+          {/* <h1>About me</h1> */}
           <p className="tag">{"</h1>"}</p>
           <p className="bio">
             Professionally connected with the software  and
