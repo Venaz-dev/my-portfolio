@@ -9,26 +9,28 @@ function MyApp({ Component, pageProps, router }) {
         initial="pageInitial"
         animate="pageAnimate"
         exit="pageExit"
-        transition={{ duration: 0.5,}}
+        // transition={{ duration: 0.5,}}
         variants={{
           pageInitial: {
-            backgroundColor: '#444444',
-            transform: ' translateY(-100vh)'
-            // opacity: 0,
+            // backgroundColor: '#444444',
+            // transform: ' translateY(-100vh)'
+            opacity: 0,
+            // filter: 'invert()',
             // transform: 'translateX(-100vw)',
             
             
           },
           pageAnimate: {
-           
-            transform: ' translateY(0vh)',
-            backgroundColor: '#101010',
+            opacity: 1,
+            
+            // transform: ' translateY(0vh)',
+            // backgroundColor: '#101010',
           },
           pageExit:{
-            backgroundColor: '#444444',
+            // backgroundColor: '#444444',
             // filter: 'invert()',
-            // opacity: 0,
-            transform: ' translateY(100vh)'
+            opacity: 0,
+            // transform: ' translateY(100vh)'
           }
         }}
       >

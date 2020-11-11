@@ -5,28 +5,33 @@ import Home from "../../public/assets/home";
 import Contact from "../../public/assets/contact";
 import Portfolio from "../../public/assets/portfolio";
 import Skills from "../../public/assets/skills";
-import MenuIcon from "../../public/assets/menu_icon"
+import MenuIcon from "../../public/assets/menu_icon";
 
 import Link from "next/link";
 
 const Nav = ({ page, loading }) => {
-
-  const [menu, setMenu] = useState(false)
-  const menuRef = useRef()
+  const [menu, setMenu] = useState(false);
+  const menuRef = useRef();
 
   const toogleMenu = () => {
-    if(menu){
-      menuRef.current.style.transform = "translateY(0px)"
-    }else{
-      menuRef.current.style.transform = "translateY(65px)"
+    if (menu) {
+      menuRef.current.style.transform = "translateY(0px)";
+    } else {
+      menuRef.current.style.transform = "translateY(65px)";
     }
-    setMenu(!menu)
-  }
+    setMenu(!menu);
+  };
   return (
     <nav>
       <div className="topbar">
-        <div className="logo"><img src={require("../../public/assets/venazlogo.png")}/></div>
-        <div onClick={toogleMenu}><MenuIcon active={menu}/></div>
+        <Link href="/">
+          <div className="logo">
+            <img src={require("../../public/assets/venazlogo.png")} />
+          </div>
+        </Link>
+        <div onClick={toogleMenu}>
+          <MenuIcon active={menu} />
+        </div>
       </div>
       <div className="main-nav" ref={menuRef}>
         <div className="logo"></div>
@@ -56,12 +61,12 @@ const Nav = ({ page, loading }) => {
             </div>
           </Link>
           <Link href="/portfolio">
-          <div onClick={toogleMenu}>
-            <div className="icon">
-              <Portfolio page={page} />
+            <div onClick={toogleMenu}>
+              <div className="icon">
+                <Portfolio page={page} />
+              </div>
+              <p>WORKS</p>
             </div>
-            <p>WORKS</p>
-          </div>
           </Link>
           <Link href="/contact">
             <div onClick={toogleMenu}>
