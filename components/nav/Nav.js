@@ -84,11 +84,16 @@ const Nav = ({ page, loading }) => {
           </Link>
         </div>
         <div className="socials">
-          <Link href="/">
-            <Twitter />
+          <Link href="https://twitter.com/venazdev">
+            <a>
+              <Twitter />
+            </a>
           </Link>
-          <Link href="/">
-            <Linkedin />
+
+          <Link href="https://www.linkedin.com/in/chibuzo-madumere-venaz104">
+            <a>
+              <Linkedin />
+            </a>
           </Link>
         </div>
       </div>
