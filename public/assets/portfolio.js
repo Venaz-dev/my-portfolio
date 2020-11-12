@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 const Portfolio = ({page}) => {
-  const [color, setColor] = useState(page === "portfolio" ? "#8957FF" : "#444444")
+  const [color, setColor] = useState(page === "works" ? "#8957FF" : "#444444")
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

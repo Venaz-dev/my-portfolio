@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Nav from "./nav/Nav"
 import Loader from './loader/loader'
+import Head from 'next/head'
 
 const Layout = ({page, children}) => {
   const [loading, setLoading] = useState(false)
@@ -14,6 +15,10 @@ const Layout = ({page, children}) => {
   }
   return (
     <div>
+      <Head>
+        <title>Venaz Portfolio</title>
+        <link rel="icon" href="/favicon.png" />
+      </Head>
       <Nav page={page} loading = {toogleLoading} />
       <div className="children">
         {children}

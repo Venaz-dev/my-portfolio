@@ -38,7 +38,7 @@ const MenuIcon = ({active}) => {
             x2={!active ? "40" : "50"}
             fill="none"
             stroke="#8957FF"
-            stroke-width="2"
+            strokeWidth="2"
             ref={firstLine}
             // style={{transform: "rotate(40deg)"}}
           />
@@ -49,7 +49,7 @@ const MenuIcon = ({active}) => {
             transform="translate(0 14)"
             fill="none"
             stroke="#8957FF"
-            stroke-width="2"
+            strokeWidth="2"
             ref={secondLine}
             // style={{transform: " translateY(25px) rotate(-40deg)"}}
           />

@@ -1,0 +1,115 @@
+.workspage {
+    position: relative;
+    padding: 30px 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 48%;
+        margin-bottom: 30px;
+
+
+
+        h1 {
+            color: $primary;
+            font-size: 60px;
+            margin: 5px 0;
+        }
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-height: calc(100vh -100px);
+        overflow-y: scroll;
+        padding-bottom: 30px;
+        .project-item {
+            margin: 10px 20px;
+            width: 400px;
+            height: 450px;
+            background-color: $secondary;
+
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+
+            .image {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    z-index: 1;
+                }
+
+
+
+            }
+
+            &:hover {
+                .image::after {
+
+                    content: "";
+                    z-index: 5;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background-image: linear-gradient(to bottom, #8957ff65, rgba(0, 0, 0, 3.555));
+
+                }
+
+                img {
+                    transform: scale(1.2);
+                    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+                }
+            }
+
+            .text-holder {
+                padding: 0 10px;
+
+                h2 {
+                    color: #ffffff;
+                    font-weight: 500;
+                    // margin-top: 0;
+                }
+
+                p {
+                    color: #888888;
+                }
+            }
+
+            button {
+                margin-top: 20px;
+                margin-left: 10px;
+                font-size: 18px;
+                width: 100px;
+                color: #ffffff;
+                height: 40px;
+                background-size: 200% 200%;
+                background-image: linear-gradient(to top, $primary 50%, $secondary 0);
+                background-position: top;
+                border-bottom: 2px solid $primary;
+                transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+                letter-spacing: 1px;
+
+                &:hover {
+                    background-position: 0 100%;
+                }
+            }
+        }
+    }
+    @media(max-width: 500px){
+        padding: 0 10px;
+        padding-top: 80px;
+        .project-item{
+            height: 380px !important;
+            margin: 10px 0 !important;
+        }
+    }
+}

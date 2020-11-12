@@ -6,6 +6,8 @@ import Contact from "../../public/assets/contact";
 import Portfolio from "../../public/assets/portfolio";
 import Skills from "../../public/assets/skills";
 import MenuIcon from "../../public/assets/menu_icon";
+import Linkedin from "../../public/assets/linkedin";
+import Twitter from "../../public/assets/twitter";
 
 import Link from "next/link";
 
@@ -14,11 +16,15 @@ const Nav = ({ page, loading }) => {
   const menuRef = useRef();
 
   const toogleMenu = () => {
-    if (menu) {
-      menuRef.current.style.transform = "translateY(0px)";
+    if (screen.width > 500) {
     } else {
-      menuRef.current.style.transform = "translateY(65px)";
+      if (menu) {
+        menuRef.current.style.transform = "translateY(0px)";
+      } else {
+        menuRef.current.style.transform = "translateY(65px)";
+      }
     }
+
     setMenu(!menu);
   };
   return (
@@ -60,7 +66,7 @@ const Nav = ({ page, loading }) => {
               <p>SKILLS</p>
             </div>
           </Link>
-          <Link href="/portfolio">
+          <Link href="/works">
             <div onClick={toogleMenu}>
               <div className="icon">
                 <Portfolio page={page} />
@@ -77,7 +83,14 @@ const Nav = ({ page, loading }) => {
             </div>
           </Link>
         </div>
-        <div className="socials"></div>
+        <div className="socials">
+          <Link href="/">
+            <Twitter />
+          </Link>
+          <Link href="/">
+            <Linkedin />
+          </Link>
+        </div>
       </div>
     </nav>
   );

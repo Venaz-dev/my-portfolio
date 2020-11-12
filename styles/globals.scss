@@ -2,6 +2,7 @@
 $italic-family: 'La Belle Aurore';
 $primary: #8957FF;
 $bg-color: #101010;
+$secondary:  #181818;
 html,
 body {
   padding: 0;
@@ -32,6 +33,12 @@ a {
 
 p{
   margin: 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+  @media(max-width: 500px){
+    font-size: 16px;
+    letter-spacing: normal;
+  }
 }
 .link {
   text-decoration: none;
@@ -77,3 +84,4 @@ p{
 @import "./canvas/circle.scss";
 @import "./loader.scss";
 @import "./animation/animation.scss";
+@import "./works.scss"

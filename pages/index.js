@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import Circle from "../components/canvas/circle";
 import TextAnimation from "../components/animation/text_animation";
+import Link from "next/link";
 
 const Index = () => {
   return (
@@ -24,7 +25,9 @@ const Index = () => {
             <span style={{ bottom: "0", left: "10px" }}>{"</div>"}</span>
           </div>
           <div className="contact">
-            <button className="link">Contact me!</button>
+            <Link href="/about">
+              <button className="link">About me!</button>
+            </Link>
           </div>
         </div>
         <div className="circle">
