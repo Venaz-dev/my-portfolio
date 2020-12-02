@@ -3,6 +3,7 @@ import Layout from "../../components/Layout";
 import TextAnimation from "../../components/animation/text_animation";
 import portfolio from "../../shared/works";
 
+
 const Index = () => {
   return (
     <Layout page="works">
@@ -23,7 +24,9 @@ const Index = () => {
                 </p>
               </div>
               <div>
+                <a href={item.url}>
                 <button>Visit site</button>
+                </a>
               </div>
             </div>
           ))}
