@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import TextAnimation from "../../components/animation/text_animation";
 import portfolio from "../../shared/works";
-
+import Link from "next/link";
 
 const Index = () => {
   return (
@@ -19,14 +19,29 @@ const Index = () => {
               </div>
               <div className="text-holder">
                 <h2>{item.title}</h2>
-                <p>
-                 {item.description}
-                </p>
+                <p>{item.description}</p>
+              </div>
+              <div className="tools">
+                {item.tags.map((tool) => (
+                  <p key={tool.id} className="tool">
+                    {tool.name}
+                  </p>
+                ))}
               </div>
               <div>
-                <a href={item.url}>
-                <button>Visit site</button>
-                </a>
+                <Link href={item.url}>
+                  <div className="visit-link">
+                    <p>Visit Project</p>
+                    <div className="link-arrow">
+                      <img
+                        src={require("../../public/assets/external_link.svg")}
+                      />
+                      <img
+                        src={require("../../public/assets/external_link_hover.svg")}
+                      />
+                    </div>
+                  </div>
+                </Link>
               </div>
             </div>
           ))}

@@ -1,0 +1,29 @@
+<svg id="Component_2_1" data-name="Component 2 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="31" viewBox="0 0 31 31">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_145" data-name="Rectangle 145" width="31" height="31" transform="translate(239 1313)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_103" data-name="Rectangle 103" width="24" height="24" transform="translate(0 0)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_146" data-name="Rectangle 146" width="24" height="24" transform="translate(0 0)" fill="#8957ff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_22" data-name="Mask Group 22" transform="translate(-239 -1313)" clip-path="url(#clip-path)">
+    <g id="Mask_Group_10" data-name="Mask Group 10" transform="translate(270.971 1328) rotate(135)" clip-path="url(#clip-path-2)">
+      <g id="go-back-left-arrow" transform="translate(0 0)">
+        <g id="arrow-back">
+          <path id="Path_6" data-name="Path 6" d="M24,13.5H5.7l8.4,8.4L12,24,0,12,12,0l2.1,2.1L5.7,10.5H24Z" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <g id="Mask_Group_23" data-name="Mask Group 23" transform="translate(270.971 1363) rotate(135)" clip-path="url(#clip-path-3)">
+      <g id="go-back-left-arrow-2" data-name="go-back-left-arrow" transform="translate(0 0)">
+        <g id="arrow-back-2" data-name="arrow-back">
+          <path id="Path_323" data-name="Path 323" d="M24,13.5H5.7l8.4,8.4L12,24,0,12,12,0l2.1,2.1L5.7,10.5H24Z" fill="#8957ff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

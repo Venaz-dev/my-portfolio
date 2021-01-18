@@ -11,9 +11,9 @@ const Index = () => {
         <span style={{ top: "0", left: "10px" }}>{"<body>"}</span>
         <div className="text">
           <p className="tag">{"<h1>"}</p>
-          <TextAnimation text="Skills" />
-          <TextAnimation text=" & " />
-          <TextAnimation text="Experience" />
+          <TextAnimation text="Skills & Experience" />
+          {/* <TextAnimation text=" & " /> */}
+          {/* <TextAnimation text="" /> */}
           {/* <h1>Skills & Experience</h1> */}
           <p className="tag">{"</h1>"}</p>
           <p className="bio">
@@ -35,9 +35,9 @@ const Index = () => {
             me.
           </p>
         </div>
-        <div className="circle">
+        {/* <div className="circle">
           <Language />
-        </div>
+        </div> */}
 
         <span style={{ bottom: "0", left: "10px" }}>{"</body>"}</span>
       </div>
