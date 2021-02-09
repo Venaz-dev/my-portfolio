@@ -18,7 +18,10 @@ const Layout = ({ page, children }) => {
       <Head>
         <title>Venaz Portfolio</title>
         <link rel="icon" href="/favicon.png" />
-        <meta property="og:image" content={"/assets/ogimage.png"}></meta>
+        <meta
+          property="og:image"
+          content={require("../public/assets/ogimage.png")}
+        ></meta>
       </Head>
       <Nav page={page} loading={toogleLoading} />
       <div className="children">{children}</div>
