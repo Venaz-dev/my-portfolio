@@ -20,7 +20,7 @@ const Layout = ({ page, children }) => {
         <link rel="icon" href="/favicon.png" />
         <meta
           property="og:image"
-          content={require("../public/assets/ogimage.png")}
+          content="https://techietainment.io/wp-content/uploads/2021/02/State-of-cryptocurrencies-in-Nigeria.jpg"
         ></meta>
       </Head>
       <Nav page={page} loading={toogleLoading} />
