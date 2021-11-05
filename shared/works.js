@@ -1,5 +1,22 @@
 const portfolio = [
   {
+    image: require("../public/assets/devchat/watchman.png"),
+    title: "Watchman",
+    tags: [
+      {
+        id: 1,
+        name: "React Native",
+      },
+      {
+        id: 2,
+        name: "Google Maps",
+      },
+    ],
+    description:
+      "Watchman is an offline personal security app, focused on ensuring the safety of you & your loved ones during emergencies with features like emergency SOS activation, offline location tracking & access to security personnel.",
+    url: "https://play.google.com/store/apps/details?id=com.maximumwatchmanandcounselling.watchman",
+  },
+  {
     image: require("../public/assets/devchat/quikmoni2.jpg"),
     title: "QuikMoni",
     tags: [
