@@ -9,7 +9,7 @@ const Index = () => {
     <Layout page="works">
       <div className="workspage">
         <div className="text">
-          <TextAnimation text="My projects" />
+          <TextAnimation text="My Projects" />
         </div>
         <div className="projects">
           {portfolio.map((item) => (
@@ -29,7 +29,7 @@ const Index = () => {
                 ))}
               </div>
               <div>
-                <Link href={item.url}>
+                <a href={item.url} target="_blank" rel="noreferrer">
                   <div className="visit-link">
                     <p>Visit Project</p>
                     <div className="link-arrow">
@@ -41,7 +41,7 @@ const Index = () => {
                       />
                     </div>
                   </div>
-                </Link>
+                </a>
               </div>
             </div>
           ))}

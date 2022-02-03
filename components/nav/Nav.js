@@ -84,17 +84,21 @@ const Nav = ({ page, loading }) => {
           </Link>
         </div>
         <div className="socials">
-          <Link href="https://twitter.com/venazdev">
-            <a>
-              <Twitter />
-            </a>
-          </Link>
+          <a
+            href="https://twitter.com/venazdev"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Twitter />
+          </a>
 
-          <Link href="https://www.linkedin.com/in/chibuzo-madumere-venaz104">
-            <a>
-              <Linkedin />
-            </a>
-          </Link>
+          <a
+            href="https://www.linkedin.com/in/chibuzo-madumere/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Linkedin />
+          </a>
         </div>
       </div>
     </nav>

@@ -1,5 +1,22 @@
 const portfolio = [
   {
+    image: require("../public/assets/devchat/AVS_landing_page.png"),
+    title: "Algovest Landing Page",
+    tags: [
+      {
+        id: 1,
+        name: "React.js",
+      },
+      {
+        id: 2,
+        name: "GSAP",
+      },
+    ],
+    description:
+      "AlgoVest is an artificial intelligence trading system that aims for consistent profitability in financial markets, utilizing safe strategies and advanced mathematical formulas, to improve trading accuracy and reduce the risk of loss.",
+    url: "https://algovest.fi/",
+  },
+  {
     image: require("../public/assets/devchat/watchman.png"),
     title: "Watchman",
     tags: [
