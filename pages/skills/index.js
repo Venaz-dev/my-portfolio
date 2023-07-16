@@ -17,18 +17,28 @@ const Index = () => {
           {/* <h1>Skills & Experience</h1> */}
           <p className="tag">{"</h1>"}</p>
           <p className="bio">
-            The main area of my expertise is front end development (client side
-            of the web).
+            My primary specialization lies in front-end development, focusing on
+            the client-side aspect of web development.
           </p>
           <p className="bio">
-            HTML, CSS, JS, building small and medium web apps with Next(React)
-            js, Vue js, animations, and coding interactive layouts.
+            <ul>
+              <li>HTML</li>
+              <li>CSS / SCSS</li>
+              <li>Wordpress</li>
+              <li>Javascript</li>
+              <li>Typescript </li>
+              <li>ReactJS & React Hooks </li>
+              <li>Nextjs </li>
+              <li>Vuejs </li>
+              <li>Google Searching </li>
+              <li>Git and Github </li>
+            </ul>
           </p>
+
           <p className="bio">
-            I also have experience building with open source CMS like Wordpress
-          </p>
-          <p className="bio">
-            Visit my <a href="linkedin.com">linkedIn</a> profile or just{" "}
+            Visit my{" "}
+            <a href="https://www.linkedin.com/in/chibuzo-madumere/">linkedIn</a>{" "}
+            profile or just{" "}
             <Link href="/contact">
               <a>contact</a>
             </Link>{" "}

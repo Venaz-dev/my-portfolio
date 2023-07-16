@@ -15,29 +15,39 @@ const Index = () => {
           {/* <h1>About me</h1> */}
           <p className="tag">{"</h1>"}</p>
           <p className="bio">
-            I'm a Frontend Developer and Content creator based in Nigeria.
+            I am a Nigeria-based Frontend Developer with substantial experience
+            in the software and information technology industry.
           </p>
           <p className="bio">
-            I've been Professionally connected with the software and information
-            technology industry for some years.
+            Throughout my professional journey, I have actively engaged with
+            various aspects of this field, consistently seeking opportunities to
+            enhance my knowledge and expertise.
           </p>
           <p className="bio">
-            Most of my time is spent on learning new ways to break the web.
+            I dedicate a significant portion of my time to exploring new ways to
+            challenge and push the boundaries of web development.
           </p>
+
           <p className="bio">
-            Well-organised person, problem solver, high attention to detail. Fan
-            of gaming, outdoor activities and, recently, content creation.
+            As a well-organized individual, I excel in problem-solving and
+            possess a keen eye for detail. Additionally, I am an avid enthusiast
+            of gaming, outdoor activities, and have recently ventured into
+            content creation.
           </p>
+
           <p className="bio">
-            Interested in the entire web spectrum, improving my{" "}
+            My interests includes the entirety of the web spectrum, but more
+            specialized on the front-end and I am committed to continuously
+            improving my{" "}
             <Link href="/skills">
               <a>skills</a>
             </Link>{" "}
-            and working on ambitious projects with positive people.
+            while collaborating on ambitious projects alongside like-minded and
+            positive individuals.
           </p>
         </div>
         <div className="image">
-          <img src={require("../../public/assets/potrait.png")}/>
+          <img src={require("../../public/assets/potrait.png")} />
         </div>
 
         <span style={{ bottom: "0", left: "10px" }}>{"</body>"}</span>
